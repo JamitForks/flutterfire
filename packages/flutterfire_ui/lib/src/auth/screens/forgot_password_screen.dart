@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutterfire_ui/auth.dart';
 
@@ -48,11 +49,11 @@ class ForgotPasswordScreen extends StatelessWidget {
         resizeToAvoidBottomInset: resizeToAvoidBottomInset,
         body: ResponsivePage(
           desktopLayoutDirection: desktopLayoutDirection,
-	  headerBuilder: (_, __, ___) {
+          headerBuilder: (_, __, ___) {
             return Align(
               alignment: Alignment.topLeft,
               child: IconButton(
-		splashRadius: 22,
+                splashRadius: 22,
                 icon: const Icon(
                   Icons.close,
                   color: Colors.white,
