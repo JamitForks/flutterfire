@@ -52,6 +52,7 @@ class ForgotPasswordScreen extends StatelessWidget {
             return Align(
               alignment: Alignment.topLeft,
               child: IconButton(
+		splashRadius: 22,
                 icon: const Icon(
                   Icons.close,
                   color: Colors.white,
