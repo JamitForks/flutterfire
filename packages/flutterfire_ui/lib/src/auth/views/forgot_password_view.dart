@@ -80,7 +80,10 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
           if (!emailSent) ...[
             spacer,
             widget.subtitleBuilder?.call(context) ??
-                Text(l.forgotPasswordHintText),
+		Text(
+                  l.forgotPasswordHintText,
+                  style: const TextStyle(color: Colors.white),
+                ),
           ],
           spacer,
           if (!emailSent) ...[
@@ -91,7 +94,10 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
             ),
             spacer,
           ] else ...[
-            Text(l.passwordResetEmailSentText),
+	    Text(
+              l.passwordResetEmailSentText,
+              style: const TextStyle(color: Colors.white),
+            ),
             spacer,
           ],
           if (exception != null) ...[
