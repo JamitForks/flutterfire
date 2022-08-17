@@ -196,10 +196,8 @@ class DeLocalizations extends FlutterFireUILocalizationLabels {
     this.isNotAValidEmailErrorText = 'Geben Sie eine gültige E-Mail an',
     this.userNotFoundErrorText = 'Das Konto existiert nicht',
     this.emailTakenErrorText = 'Konto mit dieser E-Mail existiert bereits',
-    this.accessDisabledErrorText =
-        'Der Zugriff auf dieses Konto wurde vorübergehend deaktiviert',
-    this.wrongOrNoPasswordErrorText =
-        'Das Passwort ist ungültig oder der Benutzer hat kein Passwort',
+    this.accessDisabledErrorText = 'Der Zugriff auf dieses Konto wurde vorübergehend deaktiviert',
+    this.wrongOrNoPasswordErrorText = 'Das Passwort ist ungültig oder der Benutzer hat kein Passwort',
     this.signInText = 'Anmelden',
     this.registerText = 'Registrieren',
     this.registerHintText = 'Sie haben noch kein Konto?',
@@ -213,17 +211,14 @@ class DeLocalizations extends FlutterFireUILocalizationLabels {
     this.deleteAccount = 'Konto löschen',
     this.passwordIsRequiredErrorText = 'Passwort ist erforderlich',
     this.confirmPasswordIsRequiredErrorText = 'Bestätigen Sie Ihr Passwort',
-    this.confirmPasswordDoesNotMatchErrorText =
-        'Passwörter stimmen nicht überein',
+    this.confirmPasswordDoesNotMatchErrorText = 'Passwörter stimmen nicht überein',
     this.confirmPasswordInputLabel = 'Passwort bestätigen',
     this.forgotPasswordButtonLabel = 'Passwort vergessen?',
     this.forgotPasswordViewTitle = 'Passwort vergessen',
     this.resetPasswordButtonLabel = 'Passwort zurücksetzen',
     this.verifyItsYouText = 'Überprüfen Sie, ob Sie es sind',
-    this.differentMethodsSignInTitleText =
-        'Verwenden Sie eine der folgenden Methoden, um sich anzumelden',
-    this.findProviderForEmailTitleText =
-        'Geben Sie Ihre E-Mail-Adresse ein, um fortzufahren',
+    this.differentMethodsSignInTitleText = 'Verwenden Sie eine der folgenden Methoden, um sich anzumelden',
+    this.findProviderForEmailTitleText = 'Geben Sie Ihre E-Mail-Adresse ein, um fortzufahren',
     this.continueText = 'Weiter',
     this.countryCode = 'Ländercode',
     this.codeRequiredErrorText = 'Ländercode ist erforderlich',

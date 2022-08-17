@@ -187,7 +187,7 @@ class EnLocalizations extends FlutterFireUILocalizationLabels {
     this.verifyingPhoneNumberViewTitle = 'Code aus SMS eingeben',
     this.unknownError = 'Ein unbekannter Fehler ist aufgetreten',
     this.smsAutoresolutionFailedError =
-    'Der SMS-Code konnte nicht automatisch aufgelöst werden. Bitte geben Sie Ihren Code manuell ein',
+        'Der SMS-Code konnte nicht automatisch aufgelöst werden. Bitte geben Sie Ihren Code manuell ein',
     this.smsCodeSentText = 'SMS-Code wurde verschickt',
     this.sendingSMSCodeText = 'SMS-Code versenden...',
     this.verifyingSMSCodeText = 'SMS-Code überprüfen...',
@@ -196,10 +196,8 @@ class EnLocalizations extends FlutterFireUILocalizationLabels {
     this.isNotAValidEmailErrorText = 'Geben Sie eine gültige E-Mail an',
     this.userNotFoundErrorText = 'Das Konto existiert nicht',
     this.emailTakenErrorText = 'Konto mit dieser E-Mail existiert bereits',
-    this.accessDisabledErrorText =
-    'Der Zugriff auf dieses Konto wurde vorübergehend deaktiviert',
-    this.wrongOrNoPasswordErrorText =
-    'Das Passwort ist ungültig oder der Benutzer hat kein Passwort',
+    this.accessDisabledErrorText = 'Der Zugriff auf dieses Konto wurde vorübergehend deaktiviert',
+    this.wrongOrNoPasswordErrorText = 'Das Passwort ist ungültig oder der Benutzer hat kein Passwort',
     this.signInText = 'Anmelden',
     this.registerText = 'Registrieren',
     this.registerHintText = 'Sie haben noch kein Konto?',
@@ -213,17 +211,14 @@ class EnLocalizations extends FlutterFireUILocalizationLabels {
     this.deleteAccount = 'Konto löschen',
     this.passwordIsRequiredErrorText = 'Passwort ist erforderlich',
     this.confirmPasswordIsRequiredErrorText = 'Bestätigen Sie Ihr Passwort',
-    this.confirmPasswordDoesNotMatchErrorText =
-    'Passwörter stimmen nicht überein',
+    this.confirmPasswordDoesNotMatchErrorText = 'Passwörter stimmen nicht überein',
     this.confirmPasswordInputLabel = 'Passwort bestätigen',
     this.forgotPasswordButtonLabel = 'Passwort vergessen?',
     this.forgotPasswordViewTitle = 'Passwort vergessen',
     this.resetPasswordButtonLabel = 'Passwort zurücksetzen',
     this.verifyItsYouText = 'Überprüfen Sie, ob Sie es sind',
-    this.differentMethodsSignInTitleText =
-    'Verwenden Sie eine der folgenden Methoden, um sich anzumelden',
-    this.findProviderForEmailTitleText =
-    'Geben Sie Ihre E-Mail-Adresse ein, um fortzufahren',
+    this.differentMethodsSignInTitleText = 'Verwenden Sie eine der folgenden Methoden, um sich anzumelden',
+    this.findProviderForEmailTitleText = 'Geben Sie Ihre E-Mail-Adresse ein, um fortzufahren',
     this.continueText = 'Weiter',
     this.countryCode = 'Ländercode',
     this.codeRequiredErrorText = 'Ländercode ist erforderlich',
@@ -234,13 +229,13 @@ class EnLocalizations extends FlutterFireUILocalizationLabels {
     this.provideEmail = 'Geben Sie E-Mail und Passwort an',
     this.goBackButtonLabel = 'Zurück',
     this.passwordResetEmailSentText =
-    'Wir haben Ihnen eine E-Mail mit einem Link zum Zurücksetzen Ihres Passworts geschickt. Bitte prüfen Sie Ihre E-Mail.',
+        'Wir haben Ihnen eine E-Mail mit einem Link zum Zurücksetzen Ihres Passworts geschickt. Bitte prüfen Sie Ihre E-Mail.',
     this.forgotPasswordHintText =
-    'Geben Sie Ihre E-Mail-Adresse an und wir senden Ihnen einen Link zum Zurücksetzen Ihres Passworts',
+        'Geben Sie Ihre E-Mail-Adresse an und wir senden Ihnen einen Link zum Zurücksetzen Ihres Passworts',
     this.emailLinkSignInButtonLabel = 'Anmelden mit Magic Link',
     this.signInWithEmailLinkViewTitleText = 'Mit Magic Link anmelden',
     this.signInWithEmailLinkSentText =
-    'Wir haben Ihnen eine E-Mail mit einem Magic Link geschickt. Prüfen Sie Ihre E-Mail und folgen Sie dem Link, um sich anzumelden',
+        'Wir haben Ihnen eine E-Mail mit einem Magic Link geschickt. Prüfen Sie Ihre E-Mail und folgen Sie dem Link, um sich anzumelden',
     this.sendLinkButtonLabel = 'Magic Link senden',
     this.arrayLabel = 'array',
     this.booleanLabel = 'boolean',
