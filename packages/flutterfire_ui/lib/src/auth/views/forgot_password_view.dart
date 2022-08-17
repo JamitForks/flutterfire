@@ -66,6 +66,16 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+	  Align(
+            alignment: Alignment.topLeft,
+            child: IconButton(
+              icon: const Icon(
+                Icons.close,
+                color: Colors.white,
+              ),
+              onPressed: Navigator.of(context).pop,
+            ),
+          ),
           Title(text: l.forgotPasswordViewTitle),
           if (!emailSent) ...[
             spacer,
