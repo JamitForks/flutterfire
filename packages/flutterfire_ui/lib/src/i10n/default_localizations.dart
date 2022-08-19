@@ -85,6 +85,7 @@ abstract class FlutterFireUILocalizationLabels {
   String get signInWithEmailLinkViewTitleText;
   String get signInWithEmailLinkSentText;
   String get sendLinkButtonLabel;
+  String get credentialAlreadyInUse;
 
   // DataTable components
   String get valueLabel;

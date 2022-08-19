@@ -167,6 +167,8 @@ class ItLocalizations extends FlutterFireUILocalizationLabels {
   final String geopointLabel;
   @override
   final String referenceLabel;
+  @override
+  final String credentialAlreadyInUse;
 
   const ItLocalizations({
     this.emailInputLabel = 'Email',
@@ -196,10 +198,8 @@ class ItLocalizations extends FlutterFireUILocalizationLabels {
     this.isNotAValidEmailErrorText = 'Fornisci una email valida',
     this.userNotFoundErrorText = "L'account non esiste",
     this.emailTakenErrorText = "L'account con tale email esiste già",
-    this.accessDisabledErrorText =
-        "L'accesso a questo account è stato temporaneamente disabilitato",
-    this.wrongOrNoPasswordErrorText =
-        "La password non è valida o l'utente non dispone di una password",
+    this.accessDisabledErrorText = "L'accesso a questo account è stato temporaneamente disabilitato",
+    this.wrongOrNoPasswordErrorText = "La password non è valida o l'utente non dispone di una password",
     this.signInText = 'Accedi',
     this.registerText = 'Registrati',
     this.registerHintText = 'Non hai un account?',
@@ -219,8 +219,7 @@ class ItLocalizations extends FlutterFireUILocalizationLabels {
     this.forgotPasswordViewTitle = 'Password dimenticata',
     this.resetPasswordButtonLabel = 'Resetta password',
     this.verifyItsYouText = 'Verifica che sei tu',
-    this.differentMethodsSignInTitleText =
-        'Utilizza uno dei seguenti metodi di accesso',
+    this.differentMethodsSignInTitleText = 'Utilizza uno dei seguenti metodi di accesso',
     this.findProviderForEmailTitleText = 'Digita la tua email per continuare',
     this.continueText = 'Continua',
     this.countryCode = 'Prefisso internazionale',
@@ -233,8 +232,7 @@ class ItLocalizations extends FlutterFireUILocalizationLabels {
     this.goBackButtonLabel = 'Torna indietro',
     this.passwordResetEmailSentText =
         'Ti abbiamo inviato una email con un link per reimpostare la tua password. Si prega di controllare la tua email.',
-    this.forgotPasswordHintText =
-        'Fornisci la tua email e ti invieremo un link per reimpostare la tua password',
+    this.forgotPasswordHintText = 'Fornisci la tua email e ti invieremo un link per reimpostare la tua password',
     this.emailLinkSignInButtonLabel = 'Accedi con link magico',
     this.signInWithEmailLinkViewTitleText = 'Accedi con link magico',
     this.signInWithEmailLinkSentText =
@@ -259,5 +257,6 @@ class ItLocalizations extends FlutterFireUILocalizationLabels {
     this.latitudeLabel = 'latitudine',
     this.geopointLabel = 'geopunto',
     this.referenceLabel = 'riferimento',
+    this.credentialAlreadyInUse = 'This credential is already associated with a different user account.',
   });
 }

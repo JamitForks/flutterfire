@@ -167,6 +167,8 @@ class PtLocalizations extends FlutterFireUILocalizationLabels {
   final String geopointLabel;
   @override
   final String referenceLabel;
+  @override
+  final String credentialAlreadyInUse;
 
   const PtLocalizations({
     this.emailInputLabel = 'E-mail',
@@ -196,10 +198,8 @@ class PtLocalizations extends FlutterFireUILocalizationLabels {
     this.isNotAValidEmailErrorText = 'Digite um e-mail válido',
     this.userNotFoundErrorText = 'Conta não existe',
     this.emailTakenErrorText = 'Já existe uma conta com esse e-mail',
-    this.accessDisabledErrorText =
-        'O acesso a esta conta foi temporariamente desativado',
-    this.wrongOrNoPasswordErrorText =
-        'A senha é inválida ou o usuário não tem uma senha',
+    this.accessDisabledErrorText = 'O acesso a esta conta foi temporariamente desativado',
+    this.wrongOrNoPasswordErrorText = 'A senha é inválida ou o usuário não tem uma senha',
     this.signInText = 'Fazer login',
     this.registerText = 'Registrar',
     this.registerHintText = 'Não tem uma conta?',
@@ -219,8 +219,7 @@ class PtLocalizations extends FlutterFireUILocalizationLabels {
     this.forgotPasswordViewTitle = 'Esqueci minha senha',
     this.resetPasswordButtonLabel = 'Redefinir senha',
     this.verifyItsYouText = 'Verifique se é você',
-    this.differentMethodsSignInTitleText =
-        'Use um dos seguintes métodos para fazer login',
+    this.differentMethodsSignInTitleText = 'Use um dos seguintes métodos para fazer login',
     this.findProviderForEmailTitleText = 'Digite seu e-mail para continuar',
     this.continueText = 'Continuar',
     this.countryCode = 'Código',
@@ -233,8 +232,7 @@ class PtLocalizations extends FlutterFireUILocalizationLabels {
     this.goBackButtonLabel = 'Voltar',
     this.passwordResetEmailSentText =
         'Enviamos um e-mail para você com um link para redefinir sua senha. Por favor, verifique seu e-mail.',
-    this.forgotPasswordHintText =
-        'Digite seu e-mail e nós lhe enviaremos um link para redefinir sua senha',
+    this.forgotPasswordHintText = 'Digite seu e-mail e nós lhe enviaremos um link para redefinir sua senha',
     this.emailLinkSignInButtonLabel = 'Faça login com o link mágico',
     this.signInWithEmailLinkViewTitleText = 'Faça login com o link mágico',
     this.signInWithEmailLinkSentText =
@@ -259,5 +257,6 @@ class PtLocalizations extends FlutterFireUILocalizationLabels {
     this.latitudeLabel = 'latitude',
     this.geopointLabel = 'geoponto',
     this.referenceLabel = 'referência',
+    this.credentialAlreadyInUse = 'This credential is already associated with a different user account.',
   });
 }

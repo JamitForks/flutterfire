@@ -167,6 +167,8 @@ class HiLocalizations extends FlutterFireUILocalizationLabels {
   final String geopointLabel;
   @override
   final String referenceLabel;
+  @override
+  final String credentialAlreadyInUse;
 
   const HiLocalizations({
     this.emailInputLabel = 'ईमेल',
@@ -196,10 +198,8 @@ class HiLocalizations extends FlutterFireUILocalizationLabels {
     this.isNotAValidEmailErrorText = 'एक वैध ईमेल प्रदान करें',
     this.userNotFoundErrorText = 'ईमेल अकाउंट मौजूद नहीं है',
     this.emailTakenErrorText = 'ऐसे ईमेल वाला अकाउंट पहले से मौजूद है',
-    this.accessDisabledErrorText =
-        'इस ईमेल अकाउंट तक पहुंच अस्थायी रूप से अक्षम कर दी गई है',
-    this.wrongOrNoPasswordErrorText =
-        'पासवर्ड अमान्य है या उपयोगकर्ता के पास पासवर्ड नहीं है',
+    this.accessDisabledErrorText = 'इस ईमेल अकाउंट तक पहुंच अस्थायी रूप से अक्षम कर दी गई है',
+    this.wrongOrNoPasswordErrorText = 'पासवर्ड अमान्य है या उपयोगकर्ता के पास पासवर्ड नहीं है',
     this.signInText = 'साइन इन करें',
     this.registerText = 'रजिस्टर करें',
     this.registerHintText = 'अकाउंट नहीं है?',
@@ -219,8 +219,7 @@ class HiLocalizations extends FlutterFireUILocalizationLabels {
     this.forgotPasswordViewTitle = 'पासवर्ड भूल गए',
     this.resetPasswordButtonLabel = 'पासवर्ड रीसेट',
     this.verifyItsYouText = 'सत्यापित करें कि यह आप हैं',
-    this.differentMethodsSignInTitleText =
-        'साइन इन करने के लिए निम्न विधियों में से एक का उपयोग करें',
+    this.differentMethodsSignInTitleText = 'साइन इन करने के लिए निम्न विधियों में से एक का उपयोग करें',
     this.findProviderForEmailTitleText = 'आगे बढ़ने के लिए अपना ईमेल दर्ज करें',
     this.continueText = 'आगे बढ़े',
     this.countryCode = 'कोड',
@@ -233,8 +232,7 @@ class HiLocalizations extends FlutterFireUILocalizationLabels {
     this.goBackButtonLabel = 'वापस जाएं',
     this.passwordResetEmailSentText =
         'हमने आपको आपका पासवर्ड रीसेट करने के लिए एक लिंक के साथ एक ईमेल भेजा है। कृपया अपनी ईमेल देखें।',
-    this.forgotPasswordHintText =
-        'अपना ईमेल प्रदान करें और हम आपको आपका पासवर्ड रीसेट करने के लिए एक लिंक भेजेंगे',
+    this.forgotPasswordHintText = 'अपना ईमेल प्रदान करें और हम आपको आपका पासवर्ड रीसेट करने के लिए एक लिंक भेजेंगे',
     this.emailLinkSignInButtonLabel = 'मैजिक लिंक के साथ साइन इन करें',
     this.signInWithEmailLinkViewTitleText = 'मैजिक लिंक के साथ साइन इन करें',
     this.signInWithEmailLinkSentText =
@@ -259,5 +257,6 @@ class HiLocalizations extends FlutterFireUILocalizationLabels {
     this.latitudeLabel = 'लैटीट्यूड',
     this.geopointLabel = 'भू बिंदु',
     this.referenceLabel = 'संदर्भ',
+    this.credentialAlreadyInUse = 'This credential is already associated with a different user account.',
   });
 }

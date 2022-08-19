@@ -167,6 +167,8 @@ class ZhLocalizations extends FlutterFireUILocalizationLabels {
   final String geopointLabel;
   @override
   final String referenceLabel;
+  @override
+  final String credentialAlreadyInUse;
 
   const ZhLocalizations({
     this.emailInputLabel = '电子邮箱',
@@ -252,5 +254,6 @@ class ZhLocalizations extends FlutterFireUILocalizationLabels {
     this.latitudeLabel = '维度',
     this.geopointLabel = '地理点',
     this.referenceLabel = '引用',
+    this.credentialAlreadyInUse = 'This credential is already associated with a different user account.',
   });
 }

@@ -167,6 +167,8 @@ class TrLocalizations extends FlutterFireUILocalizationLabels {
   final String geopointLabel;
   @override
   final String referenceLabel;
+  @override
+  final String credentialAlreadyInUse;
 
   const TrLocalizations({
     this.emailInputLabel = 'E-mail',
@@ -186,8 +188,7 @@ class TrLocalizations extends FlutterFireUILocalizationLabels {
     this.verifyCodeButtonText = 'Doğrula',
     this.verifyingPhoneNumberViewTitle = 'SMS ile gelen kodu girin',
     this.unknownError = 'Bilinmeyen bir hata meydana geldi',
-    this.smsAutoresolutionFailedError =
-        'SMS kodu otomatik olarak eklenemedi. Lütfen kodu manuel olarak girin',
+    this.smsAutoresolutionFailedError = 'SMS kodu otomatik olarak eklenemedi. Lütfen kodu manuel olarak girin',
     this.smsCodeSentText = 'SMS kodu gönderildi',
     this.sendingSMSCodeText = 'SMS kodu gönderiliyor...',
     this.verifyingSMSCodeText = 'SMS kodu doğrulanıyor...',
@@ -196,10 +197,8 @@ class TrLocalizations extends FlutterFireUILocalizationLabels {
     this.isNotAValidEmailErrorText = 'Geçerli bir e-mail adresi girin',
     this.userNotFoundErrorText = 'Hesap bulunamadı',
     this.emailTakenErrorText = 'Bu email ile bir hesap mevcut',
-    this.accessDisabledErrorText =
-        'Bu hesaba erişim geçici olarak devre dışı bırakıldı.',
-    this.wrongOrNoPasswordErrorText =
-        'Şifre geçersiz veya kullanıcının bir şifresi yok',
+    this.accessDisabledErrorText = 'Bu hesaba erişim geçici olarak devre dışı bırakıldı.',
+    this.wrongOrNoPasswordErrorText = 'Şifre geçersiz veya kullanıcının bir şifresi yok',
     this.signInText = 'Giriş yap',
     this.registerText = 'Kayıt ol',
     this.registerHintText = 'Hesabın yok mu?',
@@ -219,10 +218,8 @@ class TrLocalizations extends FlutterFireUILocalizationLabels {
     this.forgotPasswordViewTitle = 'Şifremi unuttum',
     this.resetPasswordButtonLabel = 'Şifreyi sıfırla',
     this.verifyItsYouText = 'Siz olduğunuzu doğrulayın',
-    this.differentMethodsSignInTitleText =
-        'Giriş yapmak için aşağıdaki yöntemlerden birini kullanın',
-    this.findProviderForEmailTitleText =
-        'Devam etmek için email adresinizi girin',
+    this.differentMethodsSignInTitleText = 'Giriş yapmak için aşağıdaki yöntemlerden birini kullanın',
+    this.findProviderForEmailTitleText = 'Devam etmek için email adresinizi girin',
     this.continueText = 'Devam et',
     this.countryCode = 'Kod',
     this.codeRequiredErrorText = 'Ülke kodu gerekli',
@@ -234,8 +231,7 @@ class TrLocalizations extends FlutterFireUILocalizationLabels {
     this.goBackButtonLabel = 'Geri git',
     this.passwordResetEmailSentText =
         'Şifrenizi sıfırlamak için size email ile bir link gönderdik. Lütfen emailinizi kontrol edin.',
-    this.forgotPasswordHintText =
-        'E-mail adresinizi verin ve size şifrenizi sıfırlamanız için bir bağlantı gönderelim',
+    this.forgotPasswordHintText = 'E-mail adresinizi verin ve size şifrenizi sıfırlamanız için bir bağlantı gönderelim',
     this.emailLinkSignInButtonLabel = 'Sihirli bağlantı ile giriş yap',
     this.signInWithEmailLinkViewTitleText = 'Sihirli bağlantı ile giriş yap',
     this.signInWithEmailLinkSentText =
@@ -260,5 +256,6 @@ class TrLocalizations extends FlutterFireUILocalizationLabels {
     this.latitudeLabel = 'latitude',
     this.geopointLabel = 'geopoint',
     this.referenceLabel = 'reference',
+    this.credentialAlreadyInUse = 'This credential is already associated with a different user account.',
   });
 }

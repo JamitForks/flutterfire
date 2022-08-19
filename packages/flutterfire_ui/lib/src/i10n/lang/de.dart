@@ -167,6 +167,8 @@ class DeLocalizations extends FlutterFireUILocalizationLabels {
   final String geopointLabel;
   @override
   final String referenceLabel;
+  @override
+  final String credentialAlreadyInUse;
 
   const DeLocalizations({
     this.emailInputLabel = 'E-Mail',
@@ -256,5 +258,6 @@ class DeLocalizations extends FlutterFireUILocalizationLabels {
     this.latitudeLabel = 'latitude',
     this.geopointLabel = 'geopoint',
     this.referenceLabel = 'reference',
+    this.credentialAlreadyInUse = 'Die Daten sind bereits mit einem anderen Account verknüpft',
   });
 }

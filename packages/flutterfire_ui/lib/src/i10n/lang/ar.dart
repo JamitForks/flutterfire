@@ -167,6 +167,8 @@ class ArLocalizations extends FlutterFireUILocalizationLabels {
   final String geopointLabel;
   @override
   final String referenceLabel;
+  @override
+  final String credentialAlreadyInUse;
 
   const ArLocalizations({
     this.emailInputLabel = 'البريد الإلكتروني',
@@ -186,8 +188,7 @@ class ArLocalizations extends FlutterFireUILocalizationLabels {
     this.verifyCodeButtonText = 'تحقق',
     this.verifyingPhoneNumberViewTitle = 'أدخل رمز التحقق المرسل برسالة نصية',
     this.unknownError = 'حدث خطأ غير متوقع',
-    this.smsAutoresolutionFailedError =
-        'حدث خطأ أثناء محاولة قراءة الرمز تلقائياً. رجاءً قم بإدخاله يدوياً',
+    this.smsAutoresolutionFailedError = 'حدث خطأ أثناء محاولة قراءة الرمز تلقائياً. رجاءً قم بإدخاله يدوياً',
     this.smsCodeSentText = 'تم إرسال رمز التحقق برسالة نصية',
     this.sendingSMSCodeText = 'جاري إرسال الرمز برسالة نصية...',
     this.verifyingSMSCodeText = 'جاري التحقق من الرمز المرسل...',
@@ -197,8 +198,7 @@ class ArLocalizations extends FlutterFireUILocalizationLabels {
     this.userNotFoundErrorText = 'هذا الحساب غير موجود',
     this.emailTakenErrorText = 'هذا البريد الإلكتروني مستخدم مسبقاً',
     this.accessDisabledErrorText = 'تم تعطيل الوصول إلى هذا الحساب مؤقتًا',
-    this.wrongOrNoPasswordErrorText =
-        'كلمة المرور غير صالحة أو أن هذا المستخدم ليس لديه كلمة مرور',
+    this.wrongOrNoPasswordErrorText = 'كلمة المرور غير صالحة أو أن هذا المستخدم ليس لديه كلمة مرور',
     this.signInText = 'تسجيل الدخول',
     this.registerText = 'إنشاء حساب',
     this.registerHintText = 'ليس لديك حساب مسبقا؟',
@@ -212,15 +212,13 @@ class ArLocalizations extends FlutterFireUILocalizationLabels {
     this.deleteAccount = 'حذف الحساب',
     this.passwordIsRequiredErrorText = 'كلمة المرور مطلوبة',
     this.confirmPasswordIsRequiredErrorText = 'قم بتأكيد كلمة مرورك',
-    this.confirmPasswordDoesNotMatchErrorText =
-        'كلمات المرور المدخلة غير متطابقة',
+    this.confirmPasswordDoesNotMatchErrorText = 'كلمات المرور المدخلة غير متطابقة',
     this.confirmPasswordInputLabel = 'تأكيد كلمة المرور',
     this.forgotPasswordButtonLabel = 'نسيت كلمة المرور؟',
     this.forgotPasswordViewTitle = 'استرجاع كلمة المرور المنسية',
     this.resetPasswordButtonLabel = 'إعادة تعيين كلمة المرور',
     this.verifyItsYouText = 'تحقق من هويتك',
-    this.differentMethodsSignInTitleText =
-        'استخدم إحدى الطرق التالية لتسجيل الدخول',
+    this.differentMethodsSignInTitleText = 'استخدم إحدى الطرق التالية لتسجيل الدخول',
     this.findProviderForEmailTitleText = 'أدخل بريدك الإلكتروني للمتابعة',
     this.continueText = 'استمرار',
     this.countryCode = 'رمز الدولة',
@@ -233,8 +231,7 @@ class ArLocalizations extends FlutterFireUILocalizationLabels {
     this.goBackButtonLabel = 'رجوع',
     this.passwordResetEmailSentText =
         'لقد أرسلنا إليك بريدًا إلكترونيًا يحتوي على رابط لإعادة تعيين كلمة المرور الخاصة بك. من فضلك تفقد بريدك الالكتروني',
-    this.forgotPasswordHintText =
-        'أدخل بريدك الإلكتروني وسنرسل لك رابطًا لإعادة تعيين كلمة مرورك',
+    this.forgotPasswordHintText = 'أدخل بريدك الإلكتروني وسنرسل لك رابطًا لإعادة تعيين كلمة مرورك',
     this.emailLinkSignInButtonLabel = 'تسجيل الدخول عن طريق الرابط',
     this.signInWithEmailLinkViewTitleText = 'تسجيل الدخول عن طريق الرابط',
     this.signInWithEmailLinkSentText =
@@ -259,5 +256,6 @@ class ArLocalizations extends FlutterFireUILocalizationLabels {
     this.latitudeLabel = 'خط العرض',
     this.geopointLabel = 'نقطة جغرافية',
     this.referenceLabel = 'مرجع',
+    this.credentialAlreadyInUse = 'This credential is already associated with a different user account.',
   });
 }

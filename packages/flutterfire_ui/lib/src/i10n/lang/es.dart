@@ -167,6 +167,8 @@ class EsLocalizations extends FlutterFireUILocalizationLabels {
   final String geopointLabel;
   @override
   final String referenceLabel;
+  @override
+  final String credentialAlreadyInUse;
 
   const EsLocalizations({
     this.emailInputLabel = 'Correo electrónico',
@@ -195,12 +197,9 @@ class EsLocalizations extends FlutterFireUILocalizationLabels {
     this.emailIsRequiredErrorText = 'El correo electrónico es obligatorio',
     this.isNotAValidEmailErrorText = 'Ingresa un correo electrónico válido',
     this.userNotFoundErrorText = 'No existe una cuenta con este usuario',
-    this.emailTakenErrorText =
-        'Ya existe una cuenta con este correo electrónico',
-    this.accessDisabledErrorText =
-        'El acceso a esta cuenta se ha inhabilitado temporalmente',
-    this.wrongOrNoPasswordErrorText =
-        'La contraseña no es válida o el usuario no tiene contraseña.',
+    this.emailTakenErrorText = 'Ya existe una cuenta con este correo electrónico',
+    this.accessDisabledErrorText = 'El acceso a esta cuenta se ha inhabilitado temporalmente',
+    this.wrongOrNoPasswordErrorText = 'La contraseña no es válida o el usuario no tiene contraseña.',
     this.signInText = 'Iniciar sesión',
     this.registerText = 'Registrarse',
     this.registerHintText = '¿No tienes una cuenta?',
@@ -208,8 +207,7 @@ class EsLocalizations extends FlutterFireUILocalizationLabels {
     this.signOutButtonText = 'Cerrar sesión',
     this.phoneInputLabel = 'Número de teléfono',
     this.phoneNumberInvalidErrorText = 'El número de teléfono no es válido',
-    this.phoneNumberIsRequiredErrorText =
-        'El número de teléfono es obligatorio',
+    this.phoneNumberIsRequiredErrorText = 'El número de teléfono es obligatorio',
     this.profile = 'Perfil',
     this.name = 'Nombre',
     this.deleteAccount = 'Eliminar cuenta',
@@ -221,10 +219,8 @@ class EsLocalizations extends FlutterFireUILocalizationLabels {
     this.forgotPasswordViewTitle = 'Contraseña olvidada',
     this.resetPasswordButtonLabel = 'Restablecer contraseña',
     this.verifyItsYouText = 'Verifica que eres tú',
-    this.differentMethodsSignInTitleText =
-        'Utilice uno de los siguientes métodos para iniciar sesión',
-    this.findProviderForEmailTitleText =
-        'Introduce su correo electrónico para continuar',
+    this.differentMethodsSignInTitleText = 'Utilice uno de los siguientes métodos para iniciar sesión',
+    this.findProviderForEmailTitleText = 'Introduce su correo electrónico para continuar',
     this.continueText = 'Continuar',
     this.countryCode = 'Código de país',
     this.codeRequiredErrorText = 'El código de país es obligatorio',
@@ -262,5 +258,6 @@ class EsLocalizations extends FlutterFireUILocalizationLabels {
     this.latitudeLabel = 'latitud',
     this.geopointLabel = 'geopunto',
     this.referenceLabel = 'referencia',
+    this.credentialAlreadyInUse = 'This credential is already associated with a different user account.',
   });
 }

@@ -167,6 +167,8 @@ class JaLocalizations extends FlutterFireUILocalizationLabels {
   final String geopointLabel;
   @override
   final String referenceLabel;
+  @override
+  final String credentialAlreadyInUse;
 
   const JaLocalizations({
     this.emailInputLabel = 'Eメール',
@@ -227,13 +229,11 @@ class JaLocalizations extends FlutterFireUILocalizationLabels {
     this.signInMethods = 'サインイン方法',
     this.provideEmail = 'メールアドレスとパスワードを入力してください',
     this.goBackButtonLabel = '戻る',
-    this.passwordResetEmailSentText =
-        'パスワードをリセットするためのリンクを記載したメールを送信しました。メールをご確認ください。',
+    this.passwordResetEmailSentText = 'パスワードをリセットするためのリンクを記載したメールを送信しました。メールをご確認ください。',
     this.forgotPasswordHintText = 'パスワードをリセットするためのリンクを送信します',
     this.emailLinkSignInButtonLabel = 'マジックリンクでサインイン',
     this.signInWithEmailLinkViewTitleText = 'マジックリンクでサインイン',
-    this.signInWithEmailLinkSentText =
-        'マジックリンクが記載されたメールを送信しました。メールをご確認の上、リンクからサインインしてください。',
+    this.signInWithEmailLinkSentText = 'マジックリンクが記載されたメールを送信しました。メールをご確認の上、リンクからサインインしてください。',
     this.sendLinkButtonLabel = 'マジックリンクを送信',
     this.arrayLabel = 'array',
     this.booleanLabel = 'boolean',
@@ -254,5 +254,6 @@ class JaLocalizations extends FlutterFireUILocalizationLabels {
     this.latitudeLabel = 'latitude',
     this.geopointLabel = 'geopoint',
     this.referenceLabel = 'reference',
+    this.credentialAlreadyInUse = 'This credential is already associated with a different user account.',
   });
 }

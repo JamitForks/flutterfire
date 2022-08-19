@@ -167,6 +167,8 @@ class IdLocalizations extends FlutterFireUILocalizationLabels {
   final String geopointLabel;
   @override
   final String referenceLabel;
+  @override
+  final String credentialAlreadyInUse;
 
   const IdLocalizations({
     this.emailInputLabel = 'Surel',
@@ -186,8 +188,7 @@ class IdLocalizations extends FlutterFireUILocalizationLabels {
     this.verifyCodeButtonText = 'Verifikasi',
     this.verifyingPhoneNumberViewTitle = 'Masukkan kode dari SMS',
     this.unknownError = 'Terjadi masalah tidak terduga',
-    this.smsAutoresolutionFailedError =
-        'Gagal mendapatkan kode SMS otomatis. Mohon masukkan secara manual',
+    this.smsAutoresolutionFailedError = 'Gagal mendapatkan kode SMS otomatis. Mohon masukkan secara manual',
     this.smsCodeSentText = 'Kode SMS telah dikirim',
     this.sendingSMSCodeText = 'Mengirim kode SMS...',
     this.verifyingSMSCodeText = 'Memverifikasi kode SMS...',
@@ -196,10 +197,8 @@ class IdLocalizations extends FlutterFireUILocalizationLabels {
     this.isNotAValidEmailErrorText = 'Masukkan surel yang valid',
     this.userNotFoundErrorText = 'Akun tidak tersedia',
     this.emailTakenErrorText = 'Email sudah digunakan oleh akun lainnya',
-    this.accessDisabledErrorText =
-        'Akses ke akun ini tidak tersedia untuk sementara',
-    this.wrongOrNoPasswordErrorText =
-        'Kata sandi tidak tepat atau pengguna tidak memiliki kata sandi',
+    this.accessDisabledErrorText = 'Akses ke akun ini tidak tersedia untuk sementara',
+    this.wrongOrNoPasswordErrorText = 'Kata sandi tidak tepat atau pengguna tidak memiliki kata sandi',
     this.signInText = 'Masuk',
     this.registerText = 'Daftar',
     this.registerHintText = 'Tidak memiliki akun?',
@@ -219,8 +218,7 @@ class IdLocalizations extends FlutterFireUILocalizationLabels {
     this.forgotPasswordViewTitle = 'Lupa kata sandi',
     this.resetPasswordButtonLabel = 'Atur ulang kata sandi',
     this.verifyItsYouText = 'Verifikasi ini adalah Anda',
-    this.differentMethodsSignInTitleText =
-        'Gunakan salah satu metode untuk masuk dibawah ini',
+    this.differentMethodsSignInTitleText = 'Gunakan salah satu metode untuk masuk dibawah ini',
     this.findProviderForEmailTitleText = 'Masukkan surel untuk melanjutkan',
     this.continueText = 'Lanjutkan',
     this.countryCode = 'Kode',
@@ -259,5 +257,6 @@ class IdLocalizations extends FlutterFireUILocalizationLabels {
     this.latitudeLabel = 'garis lintang',
     this.geopointLabel = 'geografis',
     this.referenceLabel = 'referensi',
+    this.credentialAlreadyInUse = 'This credential is already associated with a different user account.',
   });
 }

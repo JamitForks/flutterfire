@@ -167,6 +167,8 @@ class FrLocalizations extends FlutterFireUILocalizationLabels {
   final String geopointLabel;
   @override
   final String referenceLabel;
+  @override
+  final String credentialAlreadyInUse;
 
   const FrLocalizations({
     this.emailInputLabel = 'Email',
@@ -196,36 +198,29 @@ class FrLocalizations extends FlutterFireUILocalizationLabels {
     this.isNotAValidEmailErrorText = 'Veuillez entrer un email valide',
     this.userNotFoundErrorText = "Le compte n'existe pas",
     this.emailTakenErrorText = 'Un compte existe déjà avec cette adresse email',
-    this.accessDisabledErrorText =
-        "L'accés à ce compte a été temporairement verrouillé",
-    this.wrongOrNoPasswordErrorText =
-        "Le mot de passe est invalide ou l'utilisateur n'a pas de mot de passe",
+    this.accessDisabledErrorText = "L'accés à ce compte a été temporairement verrouillé",
+    this.wrongOrNoPasswordErrorText = "Le mot de passe est invalide ou l'utilisateur n'a pas de mot de passe",
     this.signInText = 'Connexion',
     this.registerText = 'Inscription',
     this.registerHintText = "Vous n'avez pas de compte ?",
     this.signInHintText = 'Vous avez déjà un compte ?',
     this.signOutButtonText = 'Déconnexion',
     this.phoneInputLabel = 'Numéro de téléphone',
-    this.phoneNumberInvalidErrorText =
-        "Le numéro de téléphone n'est pas valide",
+    this.phoneNumberInvalidErrorText = "Le numéro de téléphone n'est pas valide",
     this.phoneNumberIsRequiredErrorText = 'Un numéro de téléphone est requis',
     this.profile = 'Profil',
     this.name = 'Nom',
     this.deleteAccount = 'Supprimer le compte',
     this.passwordIsRequiredErrorText = 'Un mot de passe est requis',
-    this.confirmPasswordIsRequiredErrorText =
-        'Veuillez confirmer votre mot de passe',
-    this.confirmPasswordDoesNotMatchErrorText =
-        'Les mots de passe ne se correspondent pas',
+    this.confirmPasswordIsRequiredErrorText = 'Veuillez confirmer votre mot de passe',
+    this.confirmPasswordDoesNotMatchErrorText = 'Les mots de passe ne se correspondent pas',
     this.confirmPasswordInputLabel = 'Confirmez votre mot de passe',
     this.forgotPasswordButtonLabel = 'Mot de passe oublié ?',
     this.forgotPasswordViewTitle = 'Mot de passe oublié',
     this.resetPasswordButtonLabel = 'Réinitialiser votre mot de passe',
     this.verifyItsYouText = 'Vérifiez votre identité',
-    this.differentMethodsSignInTitleText =
-        'Utilisez une des méthodes suivantes pour vous connecter',
-    this.findProviderForEmailTitleText =
-        'Entrez votre adresse email pour continuer',
+    this.differentMethodsSignInTitleText = 'Utilisez une des méthodes suivantes pour vous connecter',
+    this.findProviderForEmailTitleText = 'Entrez votre adresse email pour continuer',
     this.continueText = 'Continuer',
     this.countryCode = 'Code',
     this.codeRequiredErrorText = 'Un code de pays est requis',
@@ -240,8 +235,7 @@ class FrLocalizations extends FlutterFireUILocalizationLabels {
     this.forgotPasswordHintText =
         'Fournissez votre adresse email et nous vous enverrons un lien pour réinitialiser votre mot de passe',
     this.emailLinkSignInButtonLabel = 'Connectez-vous avec le lien magique',
-    this.signInWithEmailLinkViewTitleText =
-        'Connectez-vous avec le lien magique',
+    this.signInWithEmailLinkViewTitleText = 'Connectez-vous avec le lien magique',
     this.signInWithEmailLinkSentText =
         'Nous vous avons envoyé un email avec un lien magique. Vérifiez vos emails et clickez sur le lien pour vous connecter',
     this.sendLinkButtonLabel = 'Envoyer un lien magique',
@@ -264,5 +258,6 @@ class FrLocalizations extends FlutterFireUILocalizationLabels {
     this.latitudeLabel = 'latitude',
     this.geopointLabel = 'géopoint',
     this.referenceLabel = 'référence',
+    this.credentialAlreadyInUse = 'This credential is already associated with a different user account.',
   });
 }
