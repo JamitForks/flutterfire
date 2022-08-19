@@ -105,8 +105,7 @@ class _ErrorListener extends StatelessWidget {
   }
 }
 
-class OAuthProviderButton extends StatelessWidget
-    with SignInWithOAuthProviderMixin {
+class OAuthProviderButton extends StatelessWidget with SignInWithOAuthProviderMixin {
   final double size;
   final AuthAction? action;
   final FirebaseAuth? auth;
@@ -130,8 +129,7 @@ class OAuthProviderButton extends StatelessWidget
 
   @override
   Widget build(BuildContext context) {
-    final brightness =
-        CupertinoTheme.of(context).brightness ?? Theme.of(context).brightness;
+    final brightness = CupertinoTheme.of(context).brightness ?? Theme.of(context).brightness;
     final style = providerConfig.style.withBrightness(brightness);
     final l = FlutterFireUILocalizations.labelsOf(context);
 
@@ -199,7 +197,7 @@ class OAuthProviderButton extends StatelessWidget
                 ),
               ),
             ),
-            // const _ErrorListener(),
+            const _ErrorListener(),
           ],
         ),
       );
@@ -279,7 +277,7 @@ class OAuthProviderButton extends StatelessWidget
               ],
             ),
           ),
-          // const _ErrorListener(),
+          const _ErrorListener(),
         ],
       ),
     );
@@ -308,8 +306,7 @@ abstract class OAuthProviderButtonWidget extends StatelessWidget {
   }
 }
 
-class OAuthProviderIconButton extends StatelessWidget
-    with SignInWithOAuthProviderMixin {
+class OAuthProviderIconButton extends StatelessWidget with SignInWithOAuthProviderMixin {
   final double size;
   final FirebaseAuth? auth;
   final AuthAction? action;
