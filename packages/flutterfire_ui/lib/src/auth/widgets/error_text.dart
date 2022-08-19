@@ -71,6 +71,10 @@ class ErrorText extends StatelessWidget {
       }
     }
 
+    if (text == l.unknownError) {
+      return Container();
+    }
+
     return Text(
       text,
       textAlign: textAlign,
