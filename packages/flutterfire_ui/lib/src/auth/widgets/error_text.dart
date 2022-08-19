@@ -61,13 +61,22 @@ class ErrorText extends StatelessWidget {
       text = l.smsAutoresolutionFailedError;
     }
 
+    String firebaseAuthCode = '';
     if (exception is FirebaseAuthException) {
       final e = exception as FirebaseAuthException;
-      final code = e.code;
-      final newText = localizedErrorText(code, l) ?? e.message;
+      final firebaseAuthCode = e.code;
+      final newText = localizedErrorText(firebaseAuthCode, l) ?? e.message;
 
       if (newText != null) {
         text = newText;
+      }
+
+      if (firebaseAuthCode == 'email-already-in-use') {
+        return Text(
+          text,
+          textAlign: textAlign,
+          style: TextStyle(color: color),
+        );
       }
     }
 
@@ -78,7 +87,7 @@ class ErrorText extends StatelessWidget {
     return Text(
       text,
       textAlign: textAlign,
-      style: TextStyle(color: color),
+      style: const TextStyle(color: Color(0xFF5EBF4D)),
     );
   }
 }
