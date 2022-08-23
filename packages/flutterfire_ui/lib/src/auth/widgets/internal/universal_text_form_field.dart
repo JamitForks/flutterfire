@@ -74,6 +74,7 @@ class UniversalTextFormField extends PlatformWidget {
       controller: controller,
       decoration: InputDecoration(
         labelText: placeholder,
+        labelStyle: const TextStyle(color: Colors.white),
         prefix: prefix,
       ),
       validator: validator,
@@ -81,6 +82,7 @@ class UniversalTextFormField extends PlatformWidget {
       inputFormatters: inputFormatters,
       keyboardType: keyboardType,
       obscureText: obscureText,
+      style: const TextStyle(color: Colors.white),
     );
   }
 }

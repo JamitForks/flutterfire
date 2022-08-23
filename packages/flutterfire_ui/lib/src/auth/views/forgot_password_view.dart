@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart' hide Title;
 
-import 'package:firebase_auth/firebase_auth.dart'
-    show ActionCodeSettings, FirebaseAuth, FirebaseAuthException;
+import 'package:firebase_auth/firebase_auth.dart' show ActionCodeSettings, FirebaseAuth, FirebaseAuthException;
 import 'package:flutterfire_ui/auth.dart';
 import 'package:flutterfire_ui/i10n.dart';
 import '../widgets/internal/universal_button.dart';
@@ -66,11 +65,11 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Title(text: l.forgotPasswordViewTitle),
+          Title(text: l.forgotPasswordViewTitle, color: Colors.white),
           if (!emailSent) ...[
             spacer,
             widget.subtitleBuilder?.call(context) ??
-		Text(
+                Text(
                   l.forgotPasswordHintText,
                   style: const TextStyle(color: Colors.white),
                 ),
@@ -84,7 +83,7 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
             ),
             spacer,
           ] else ...[
-	    Text(
+            Text(
               l.passwordResetEmailSentText,
               style: const TextStyle(color: Colors.white),
             ),
