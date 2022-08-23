@@ -50,21 +50,15 @@ class ForgotPasswordScreen extends StatelessWidget {
         body: ResponsivePage(
           desktopLayoutDirection: desktopLayoutDirection,
           headerBuilder: (_, __, ___) {
-            return SafeArea(
-              child: Container(
-                alignment: Alignment.centerLeft,
-                padding: const EdgeInsets.only(left: 10),
-                child: IconButton(
-                  padding: EdgeInsets.zero,
-                  splashRadius: 18,
-                  icon: const Icon(
-                    Icons.close,
-                    size: 24,
-                    color: Colors.white,
-                  ),
-                  iconSize: 18,
-                  onPressed: Navigator.of(context).pop,
+            return Align(
+              alignment: Alignment.topLeft,
+              child: IconButton(
+                splashRadius: 22,
+                icon: const Icon(
+                  Icons.close,
+                  color: Colors.white,
                 ),
+                onPressed: Navigator.of(context).pop,
               ),
             );
           },
