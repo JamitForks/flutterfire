@@ -71,11 +71,12 @@ class ErrorText extends StatelessWidget {
         text = newText;
       }
 
-      if (firebaseAuthCode == 'email-already-in-use') {
+      if (firebaseAuthCode == 'credential-already-in-use' &&
+          e.message == 'This credential is already associated with a different user account.') {
         return Text(
           text,
           textAlign: textAlign,
-          style: TextStyle(color: color),
+          style: const TextStyle(color: Color(0xFF5EBF4D)),
         );
       }
     }
@@ -87,7 +88,7 @@ class ErrorText extends StatelessWidget {
     return Text(
       text,
       textAlign: textAlign,
-      style: const TextStyle(color: Color(0xFF5EBF4D)),
+      style: TextStyle(color: color),
     );
   }
 }
