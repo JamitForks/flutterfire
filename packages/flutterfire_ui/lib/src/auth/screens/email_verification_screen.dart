@@ -88,12 +88,10 @@ class _EmailVerificationScreenContent extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<_EmailVerificationScreenContent> createState() =>
-      __EmailVerificationScreenContentState();
+  State<_EmailVerificationScreenContent> createState() => __EmailVerificationScreenContentState();
 }
 
-class __EmailVerificationScreenContentState
-    extends State<_EmailVerificationScreenContent> {
+class __EmailVerificationScreenContentState extends State<_EmailVerificationScreenContent> {
   late final service = EmailVerificationService(auth);
   FirebaseAuth get auth => widget.auth ?? FirebaseAuth.instance;
   User get user => auth.currentUser!;
@@ -101,8 +99,7 @@ class __EmailVerificationScreenContentState
 
   @override
   void initState() {
-    _ambiguate(SchedulerBinding.instance)!
-        .addPostFrameCallback(_sendEmailVerification);
+    _ambiguate(SchedulerBinding.instance)!.addPostFrameCallback(_sendEmailVerification);
     super.initState();
   }
 
@@ -143,7 +140,7 @@ class __EmailVerificationScreenContentState
         ),
         const SizedBox(height: 32),
         if (state == EmailVerificationState.pending)
-          const LoadingIndicator(size: 32, borderWidth: 2)
+          Container()
         else if (state == EmailVerificationState.sent) ...[
           LoadingButton(
             isLoading: isLoading,
@@ -154,8 +151,7 @@ class __EmailVerificationScreenContentState
             },
           ),
         ],
-        if (state == EmailVerificationState.sending)
-          const LoadingIndicator(size: 32, borderWidth: 2),
+        if (state == EmailVerificationState.sending) Container(),
         if (state == EmailVerificationState.unverified) ...[
           Text(
             "We couldn't verify your email address. ",

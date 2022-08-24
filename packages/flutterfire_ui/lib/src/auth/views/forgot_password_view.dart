@@ -96,22 +96,8 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
             const SizedBox(height: 16),
           ],
           if (!emailSent)
-            ColorizedButton.child(
-              child: isLoading
-                  ? LoadingIndicator(
-                      color: Colors.white,
-                      size: 20,
-                      borderWidth: 2,
-                    )
-                  : Text(
-                      l.resetPasswordButtonLabel,
-                      style: const TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w700,
-                        height: 24.0 / 20,
-                        color: Colors.white,
-                      ),
-                    ),
+            ColorizedButton(
+              text: l.resetPasswordButtonLabel,
               color: Colors.blue,
               onTap: () {
                 if (formKey.currentState!.validate()) {
