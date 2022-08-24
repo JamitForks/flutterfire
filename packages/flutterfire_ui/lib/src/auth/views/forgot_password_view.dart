@@ -99,8 +99,9 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
             ColorizedButton.child(
               child: isLoading
                   ? LoadingIndicator(
-                      size: 16,
-                      borderWidth: 1,
+                      color: Colors.white,
+                      size: 20,
+                      borderWidth: 2,
                     )
                   : Text(
                       l.resetPasswordButtonLabel,

@@ -211,8 +211,9 @@ class _SignInFormContentState extends State<_SignInFormContent> {
           return ColorizedButton.child(
             child: (state is SigningIn || state is SigningUp)
                 ? LoadingIndicator(
-                    size: 16,
-                    borderWidth: 1,
+                    color: Colors.white,
+                    size: 20,
+                    borderWidth: 2,
                   )
                 : Text(
                     _chooseButtonLabel(),
