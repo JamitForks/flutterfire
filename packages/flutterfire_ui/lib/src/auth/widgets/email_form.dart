@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import '../widgets/internal/loading_button.dart';
 import '../validators.dart';
+import 'colorized_button.dart';
 
 class ForgotPasswordAction extends FlutterFireUIAction {
   final void Function(BuildContext context, String? email) callback;
@@ -166,8 +167,7 @@ class _SignInFormContentState extends State<_SignInFormContent> {
           alignment: Alignment.centerRight,
           child: ForgotPasswordButton(
             onPressed: () {
-              final navAction =
-                  FlutterFireUIAction.ofType<ForgotPasswordAction>(context);
+              final navAction = FlutterFireUIAction.ofType<ForgotPasswordAction>(context);
 
               if (navAction != null) {
                 navAction.callback(context, emailCtrl.text);
@@ -182,8 +182,7 @@ class _SignInFormContentState extends State<_SignInFormContent> {
           ),
         ),
       ],
-      if (widget.action == AuthAction.signUp ||
-          widget.action == AuthAction.link) ...[
+      if (widget.action == AuthAction.signUp || widget.action == AuthAction.link) ...[
         const SizedBox(height: 8),
         PasswordInput(
           autofillHints: const [AutofillHints.newPassword],
@@ -209,13 +208,17 @@ class _SignInFormContentState extends State<_SignInFormContent> {
             context,
             const EmailFormStyle(),
           );
-
-          return LoadingButton(
-            variant: style.signInButtonVariant,
-            label: _chooseButtonLabel(),
-            isLoading: state is SigningIn || state is SigningUp,
+          return ColorizedButton(
+            text: _chooseButtonLabel(),
+            color: Colors.blue,
             onTap: _submit,
           );
+          // return LoadingButton(
+          //   variant: style.signInButtonVariant,
+          //   label: _chooseButtonLabel(),
+          //   isLoading: state is SigningIn || state is SigningUp,
+          //   onTap: _submit,
+          // );
         },
       ),
       Builder(

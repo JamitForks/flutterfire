@@ -3,6 +3,7 @@ import 'package:flutter/material.dart' hide Title;
 import 'package:firebase_auth/firebase_auth.dart' show ActionCodeSettings, FirebaseAuth, FirebaseAuthException;
 import 'package:flutterfire_ui/auth.dart';
 import 'package:flutterfire_ui/i10n.dart';
+import 'package:flutterfire_ui/src/auth/widgets/colorized_button.dart';
 import '../widgets/internal/universal_button.dart';
 
 import '../widgets/internal/loading_button.dart';
@@ -95,15 +96,24 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
             const SizedBox(height: 16),
           ],
           if (!emailSent)
-            LoadingButton(
-              isLoading: isLoading,
-              label: l.resetPasswordButtonLabel,
+            ColorizedButton(
+              text: l.resetPasswordButtonLabel,
+              color: Colors.blue,
               onTap: () {
                 if (formKey.currentState!.validate()) {
                   _submit(emailCtrl.text);
                 }
               },
             ),
+          // LoadingButton(
+          //   isLoading: isLoading,
+          //   label: l.resetPasswordButtonLabel,
+          //   onTap: () {
+          //     if (formKey.currentState!.validate()) {
+          //       _submit(emailCtrl.text);
+          //     }
+          //   },
+          // ),
           const SizedBox(height: 8),
           UniversalButton(
             variant: ButtonVariant.text,
