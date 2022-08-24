@@ -96,8 +96,21 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
             const SizedBox(height: 16),
           ],
           if (!emailSent)
-            ColorizedButton(
-              text: l.resetPasswordButtonLabel,
+            ColorizedButton.child(
+              child: isLoading
+                  ? LoadingIndicator(
+                      size: 16,
+                      borderWidth: 1,
+                    )
+                  : Text(
+                      l.resetPasswordButtonLabel,
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w700,
+                        height: 24.0 / 20,
+                        color: Colors.white,
+                      ),
+                    ),
               color: Colors.blue,
               onTap: () {
                 if (formKey.currentState!.validate()) {
@@ -105,15 +118,15 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
                 }
               },
             ),
-          // LoadingButton(
-          //   isLoading: isLoading,
-          //   label: l.resetPasswordButtonLabel,
-          //   onTap: () {
-          //     if (formKey.currentState!.validate()) {
-          //       _submit(emailCtrl.text);
-          //     }
-          //   },
-          // ),
+          LoadingButton(
+            isLoading: isLoading,
+            label: l.resetPasswordButtonLabel,
+            onTap: () {
+              if (formKey.currentState!.validate()) {
+                _submit(emailCtrl.text);
+              }
+            },
+          ),
           const SizedBox(height: 8),
           UniversalButton(
             variant: ButtonVariant.text,

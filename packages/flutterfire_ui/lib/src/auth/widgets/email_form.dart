@@ -208,17 +208,24 @@ class _SignInFormContentState extends State<_SignInFormContent> {
             context,
             const EmailFormStyle(),
           );
-          return ColorizedButton(
-            text: _chooseButtonLabel(),
+          return ColorizedButton.child(
+            child: (state is SigningIn || state is SigningUp)
+                ? LoadingIndicator(
+                    size: 16,
+                    borderWidth: 1,
+                  )
+                : Text(
+                    _chooseButtonLabel(),
+                    style: const TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w700,
+                      height: 24.0 / 20,
+                      color: Colors.white,
+                    ),
+                  ),
             color: Colors.blue,
             onTap: _submit,
           );
-          // return LoadingButton(
-          //   variant: style.signInButtonVariant,
-          //   label: _chooseButtonLabel(),
-          //   isLoading: state is SigningIn || state is SigningUp,
-          //   onTap: _submit,
-          // );
         },
       ),
       Builder(

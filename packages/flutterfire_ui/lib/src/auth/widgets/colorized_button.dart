@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'action_card_container.dart';
@@ -44,6 +43,7 @@ class ColorizedButton extends StatelessWidget {
       child: ActionCardContainer(
         margin: EdgeInsets.zero,
         shadows: const <BoxShadow>[],
+        onPressed: onTap,
         child: Container(
           width: MediaQuery.of(context).size.width,
           padding: const EdgeInsets.only(top: 14, bottom: 12),
@@ -70,7 +70,6 @@ class ColorizedButton extends StatelessWidget {
                 ),
           ),
         ),
-        onPressed: onTap,
       ),
     );
   }
