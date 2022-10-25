@@ -8,8 +8,8 @@ false_secrets:
   - example/**
 
 environment:
-  sdk: '>=2.16.0 <3.0.0'
-  flutter: '>=1.17.0'
+  sdk: ">=2.16.0 <3.0.0"
+  flutter: ">=1.17.0"
 
 dependencies:
   cloud_firestore: ^3.4.4
@@ -23,7 +23,7 @@ dependencies:
   firebase_dynamic_links: ^4.3.4
   flutter:
     sdk: flutter
-  flutter_facebook_auth: ^4.0.1
+  flutter_facebook_auth: 4.4.1+1
   flutter_localizations:
     sdk: flutter
   flutter_svg: ^1.0.0
@@ -47,7 +47,6 @@ flutter:
   assets:
     - assets/icons/
     - assets/countries.json
-
 # To add assets to your package, add an assets section, like this:
 # assets:
 #   - images/a_dot_burr.jpeg
